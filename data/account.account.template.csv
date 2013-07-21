@@ -26,13 +26,13 @@ accID_1_1105,1.1105,Purchase Advance,accID_1_11,view,account_type_view,False
 accID_1_110501,1.110501,Advance Payment For Purchase,accID_1_1105,view,account_type_view,False
 accID_1_11050101,1.11050101,Advance Payment For Purchase – IDR,accID_1_110501,other,account_type_current_assets,
 accID_1_110502,1.110502,Prepaid Tax,accID_1_1105,view,account_type_view,False
-accID_1_11050201,1.11050201,PPH 22 Import,accID_1_110502,other,account_type_tax,True
-accID_1_11050202,1.11050202,PPH 22 DN,accID_1_110502,other,account_type_tax,True
-accID_1_11050203,1.11050203,PPH 23/26,accID_1_110502,other,account_type_tax,True
-accID_1_11050204,1.11050204,PPH 25/29,accID_1_110502,other,account_type_tax,True
-accID_1_11050205,1.11050205,PPH 21/29,accID_1_110502,other,account_type_tax,True
-accID_1_11050206,1.11050206,Fiskal,accID_1_110502,other,account_type_tax,True
-accID_1_11050207,1.11050207,VAT – In,accID_1_110502,other,account_type_tax,True
+accID_1_11050201,1.11050201,PPH 22 Import,accID_1_110502,other,account_type_input_tax,True
+accID_1_11050202,1.11050202,PPH 22 DN,accID_1_110502,other,account_type_input_tax,True
+accID_1_11050203,1.11050203,PPH 23/26,accID_1_110502,other,account_type_input_tax,True
+accID_1_11050204,1.11050204,PPH 25/29,accID_1_110502,other,account_type_input_tax,True
+accID_1_11050205,1.11050205,PPH 21/29,accID_1_110502,other,account_type_input_tax,True
+accID_1_11050206,1.11050206,Fiskal,accID_1_110502,other,account_type_input_tax,True
+accID_1_11050207,1.11050207,VAT – In,accID_1_110502,other,account_type_input_tax,True
 accID_1_1106,1.1106,Prepaid Expense,accID_1_11,view,account_type_view,False
 accID_1_110601,1.110601,Prepaid Insurance,accID_1_1106,other,account_type_current_assets,True
 accID_1_110602,1.110602,Prepaid Bank Provision,accID_1_1106,other,account_type_current_assets,True
@@ -94,10 +94,10 @@ accID_2_202,2.202,Sales Advance,accID_2_2,view,account_type_view,False
 accID_2_20201,2.20201,Advance Payment For Sales,accID_2_202,view,account_type_view,False
 accID_2_2020101,2.2020101,Advance Payment For Sales – IDR,accID_2_20201,other,account_type_current_liabilities,True
 accID_2_20202,2.20202,Tax Payable,accID_2_202,view,account_type_view,False
-accID_2_2020201,2.2020201,PPH 21 Payable,accID_2_20202,other,account_type_tax,True
-accID_2_2020202,2.2020202,PPH 22/23/26 Payable,accID_2_20202,other,account_type_tax,True
-accID_2_2020203,2.2020203,PPH 25/29 Payable,accID_2_20202,other,account_type_tax,True
-accID_2_2020204,2.2020204,VAT – Out,accID_2_20202,other,account_type_tax,True
+accID_2_2020201,2.2020201,PPH 21 Payable,accID_2_20202,other,account_type_output_tax,True
+accID_2_2020202,2.2020202,PPH 22/23/26 Payable,accID_2_20202,other,account_type_output_tax,True
+accID_2_2020203,2.2020203,PPH 25/29 Payable,accID_2_20202,other,account_type_output_tax,True
+accID_2_2020204,2.2020204,VAT – Out,accID_2_20202,other,account_type_output_tax,True
 accID_2_203,2.203,Accrued Expense,accID_2_2,view,account_type_view,False
 accID_2_20301,2.20301,Accrued Expense,accID_2_203,other,account_type_current_liabilities,True
 accID_2_20302,2.20302,Account Payable Internal,accID_2_203,other,account_type_current_liabilities,True
