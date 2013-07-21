@@ -26,11 +26,17 @@
     'website': 'andhitiarama.wordpress.com',
     'category': 'Localization/Account Charts',
     'description': """
-    -
+    Locatization data for Indonesia :
+    1. Account Type
+    2. Account
+    3. Bank
+    
     """,
     'depends': ['base', 'account_chart'],
     'demo': [],
-    'data': [],
+    'data': [   'data/account.account.type.csv',
+                        'data/account.account.template.csv'
+                        'data/res.bank.csv',],
     'installable': True,
     'images': [],
 }
