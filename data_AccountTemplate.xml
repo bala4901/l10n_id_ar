@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="account.account.template" id="a0">
+            <field name="name">My Company</field>
+            <field name="code">0</field>
+            <field name="type">view</field>
+            <field name="user_type" ref="account.data_account_type_view"/>
+            <field name="reconcile" eval="False"/>
+        </record>
+
+    </data>
+</openerp>

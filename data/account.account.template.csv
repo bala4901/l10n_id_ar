@@ -1,0 +1,184 @@
+id	code	name	parent_id:id	type	user_type_id:id	reconcile
+	ID0	My Company		view	account_type_view	False
+	BAL	Balance Sheet	accTemp_ID0	view	account_type_view	False
+	AKT	Aktiva	accTemp_BAL	view	account_type_view	False
+	1.1	Assets	accTemp_AKT	view	account_type_view	False
+	1.11	Current Assets		view	account_type_view	False
+	1.1101	Cash And Equivalent		view	account_type_view	False
+	1.11011	Cash		view	account_type_view	False
+	1.11012	Bank		view	account_type_view	False
+	1.11013	Cheque		view	account_type_view	False
+	1.1101301	Time-Deposit				
+	1.1102	Short-Term Investment		view	account_type_view	False
+	1.11021	Deposit		view	account_type_view	False
+	1.11022	Other Short-Term Investment		view	account_type_view	False
+	1.1102201	Other Short-Term Investment				
+	1.1103	Account Receivable		view	account_type_view	False
+	1.11031	Account Receivable Affiliation		view	account_type_view	False
+	1.1104	Other Receivable		view	account_type_view	False
+	1.110401	Account Receivable – Office Employee				True
+	1.110402	Account Receivable – Factory Employee				True
+	1.110403	Interest Receivable				True
+	1.110404	Account Receivable For Internal				True
+	1.110499	Other Receivable				True
+	1.1105	Purchase Advance		view	account_type_view	False
+	1.110501	Advance Payment For Purchase		view	account_type_view	False
+	1.11050101	Advance Payment For Purchase – IDR				
+	1.110502	Prepaid Tax		view	account_type_view	False
+	1.11050201	PPH 22 Import				
+	1.11050202	PPH 22 DN				
+	1.11050203	PPH 23/26				
+	1.11050204	PPH 25/29				
+	1.11050205	PPH 21/29				
+	1.11050206	Fiskal				
+	1.11050207	VAT – In				
+	1.1106	Prepaid Expense		view	account_type_view	False
+	1.110601	Prepaid Insurance				
+	1.110602	Prepaid Bank Provision				
+	1.110603	Prepaid Rent				
+	1.110604	Cash Advance				
+	1.110605	Cash Advance Overseas				
+	1.1107	Inventory		view	account_type_view	False
+	1.110701	Inventory – Finished Good		view	account_type_view	False
+	1.11070101	Inventory – Finished Good				
+	1.110702	Inventory – Good In Transit		view	account_type_view	False
+	1.11070201	Inventory – Good In Transit				
+	1.110703	Inventory – Raw Material		view	account_type_view	False
+	1.11070301	Inventory – Raw Material				
+	1.110704	Inventory – Other Raw Material		view	account_type_view	False
+	1.11070401	Inventory – Other Raw Material				
+	1.110705	Inventory WIP		view	account_type_view	False
+	1.11070501	Inventory WIP				
+	1.110706	Inventory Supplies		view	account_type_view	False
+	1.11070601	Inventory Supplies				
+	1.110707	Inventory – Production Waste		view	account_type_view	False
+	1.11070701	Inventory – Production Waste				
+	1.1108	Depsoit For Purchase		view	account_type_view	False
+	1.110801	Depsoit For Purchase – IDR				
+	1.12	Fixed Assets		view	account_type_view	False
+	1.1201	Fixed Assets		view	account_type_view	False
+	1.120101	Land				
+	1.120102	Building				
+	1.120103	Machinery				
+	1.120104	Tools, Supplies And Machinery Equipment				
+	1.120105	Office Furniture And Fixture				
+	1.120106	Vehicle				
+	1.1202	Accumulated Depreciation		view	account_type_view	False
+	1.120201	Accumulated Depreciation – Building				
+	1.120202	Accumulated Depreciation – Machinery				
+	1.120203	Accumulated Depreciation – Tools, Supplies And Machinery Equipment				
+	1.120204	Accumulated Depreciation – Office Furniture And Fixture				
+	1.120205	Accumulated Depreciation – Vehicle				
+	1.1299	Other Assets		view	account_type_view	False
+	1.129901	Other Assets				
+	PSV	Pasiva	accTemp_BAL	view	account_type_view	False
+	2.2	Liability	accTemp_PSV	view	account_type_view	False
+	2.201	Current Liability		view	account_type_view	False
+	2.20101	Trade Payable		view	account_type_view	False
+	2.2010101	Trade Payable – IDR				
+	2.2010102	Trade Payable – USD				
+	2.20102	Trade Payable – Import		view	account_type_view	False
+	2.2010201	Trade Payable – Import				
+	2.20103	Bank Loan		view	account_type_view	False
+	2.20104	Purchase Discount		view	account_type_view	False
+	2.2010401	Purchase Discount – IDR				
+	2.20105	Purchase Return		view	account_type_view	False
+	2.2010501	Purchase Return – IDR				
+	2.20106	Other Liability		view	account_type_view	False
+	2.2010601	Liability For Cost Purchase				
+	2.2010602	Liability For Internal				
+	2.20107	Trade Payable – Affiliation		view	account_type_view	False
+	2.2010701	Trade Payable Affiliation – IDR				
+	2.202	Sales Advance		view	account_type_view	False
+	2.20201	Advance Payment For Sales		view	account_type_view	False
+	2.2020101	Advance Payment For Sales – IDR				
+	2.20202	Tax Payable		view	account_type_view	False
+	2.2020201	PPH 21 Payable				
+	2.2020202	PPH 22/23/26 Payable				
+	2.2020203	PPH 25/29 Payable				
+	2.2020204	VAT – Out				
+	2.203	Accrued Expense		view	account_type_view	False
+	2.20301	Accrued Expense				
+	2.20302	Account Payable Internal				
+	2.204	Deposit For Sales		view	account_type_view	False
+	3.3	Equity	accTemp_PSV	view	account_type_view	False
+	3.301	Stockholders Equity		view	account_type_view	False
+	3.309	Other Equity		view	account_type_view	False
+	PL	Profit Loss	accTemp_ID0	view	account_type_view	False
+	4.4	Revenue	accTemp_PL	view	account_type_view	False
+	4.401	Sales Revenue		view	account_type_view	False
+	4.402	Sales Return		view	account_type_view	False
+	4.403	Sales Price Different		view	account_type_view	False
+	4.404	Sales Discount		view	account_type_view	False
+	5.5	Cost Of Goods Sold	accTemp_PL	view	account_type_view	False
+	6.6	Other Revenue		view	account_type_view	False
+	7.7	Production Cost		view	account_type_view	False
+	7.701	Direct Material		view	account_type_view	False
+	7.702	Direct Production Cost		view	account_type_view	False
+	7.70201	Wages Expense For Direct Labour		view	account_type_view	False
+	7.70202	Meal Allowance For Direct Labour		view	account_type_view	False
+	7.70203	Medical Allowance For Direct Labour		view	account_type_view	False
+	7.70204	Insurance Expense For Direct Labour		view	account_type_view	False
+	7.70205	Transportation Expense For Direct Labour		view	account_type_view	False
+	7.703	Indirect Production Cost		view	account_type_view	False
+	7.70301	Indirect Material		view	account_type_view	False
+	7.70302	Indirect Labour		view	account_type_view	False
+	7.7030201	Wages Expense For Indirect Labour		view	account_type_view	False
+	7.7030202	Meal Allowance For Indirect Labour		view	account_type_view	False
+	7.7030203	Medical Allowance For Indirect Labour		view	account_type_view	False
+	7.7030204	Insurance Expense For Indirect Labour		view	account_type_view	False
+	7.7030205	Transportation Expense For Indirect Labour		view	account_type_view	False
+	7.70303	Other Indirect Production Cost		view	account_type_view	False
+	7.7030301	Factory Electricity And Fuel		view	account_type_view	False
+	7.7030302	Factory Waste Expense		view	account_type_view	False
+	7.7030303	Supplies Production Expense		view	account_type_view	False
+	7.7030304	Packaging Expense		view	account_type_view	False
+	7.7030305	Production Asset Expense		view	account_type_view	False
+	7.799	Other Production Cost		view	account_type_view	False
+	8.8	Operational Cost		view	account_type_view	False
+	8.801	General And Administrative Expense		view	account_type_view	False
+	8.80101	Labour Expense – Staff		view	account_type_view	False
+	8.8010101	Wages Expense – Staff		view	account_type_view	False
+	8.8010102	Meal Allowance – Staff		view	account_type_view	False
+	8.8010103	Medical Allowance – Staff		view	account_type_view	False
+	8.8010104	Insurance Expense – Staff		view	account_type_view	False
+	8.8010105	Transportation Expense – Staff		view	account_type_view	False
+	8.80102	Office Electricity		view	account_type_view	False
+	8.80103	Office Water Expense		view	account_type_view	False
+	8.80104	Communication Expense – Telephone		view	account_type_view	False
+	8.80105	Utilities Expense – Stationary		view	account_type_view	False
+	8.80106	Vehicle Expense		view	account_type_view	False
+	8.8010601	Operation Vehicle Expense		view	account_type_view	False
+	8.8010602	Vehicle Maintenance Expense		view	account_type_view	False
+	8.80107	Entertainment Expense		view	account_type_view	False
+	8.80108	Transportation Expense		view	account_type_view	False
+	8.80199	Other General And Administrative Expense		view	account_type_view	False
+	8.802	Sales Expense		view	account_type_view	False
+	8.80201	Freight Expense – Sales		view	account_type_view	False
+	8.80202	Sales Commision		view	account_type_view	False
+	8.80203	Promotion And Advertising		view	account_type_view	False
+	8.80204	Sales Transportation Expense		view	account_type_view	False
+	8.80205	Sales Entertainment Expense		view	account_type_view	False
+	8.80206	Bad Debt Expense		view	account_type_view	False
+	8.80299	Other Sales Expense		view	account_type_view	False
+	8.803	Export Import Expense		view	account_type_view	False
+	8.804	Oparation Asset Expense		view	account_type_view	False
+	8.80402	Insurance Expense		view	account_type_view	False
+	8.8040201	Insurance Expense – Building		view	account_type_view	False
+	8.8040202	Insurance Expense – Vehicle		view	account_type_view	False
+	8.805	Tax Expense		view	account_type_view	False
+	8.806	Biaya Materai, Iuran, Perizinan, Surat-surat		view	account_type_view	False
+	8.899	Other Operational Expense		view	account_type_view	False
+	9.9	Miscellaneous Revenue And Cost		view	account_type_view	False
+	9.901	Other Income		view	account_type_view	False
+	9.90101	Interest Income		view	account_type_view	False
+	9.90102	Giro Service Income		view	account_type_view	False
+	9.902	Other Expenses		view	account_type_view	False
+	9.90201	Interest Expense		view	account_type_view	False
+	9.90202	Gain/Loss Foreign Exchange		view	account_type_view	False
+	9.90203	Other Income And Expense		view	account_type_view	False
+	9.90204	Lost Write-Off		view	account_type_view	False
+	9.903	Bank Administrative Expense		view	account_type_view	False
+	9.90301	Giro Service Tax		view	account_type_view	False
+	9.90302	Bank Statement Printing Expense		view	account_type_view	False
+	9.90303	Bank Administration Expense		view	account_type_view	False
