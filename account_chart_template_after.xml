@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+
+        <record id="accountChartTemplate_basicIndonesiaAccount" model="account.chart.template">
+			 <field name="account_root_id" ref="accID_ID0"/>
+			 <field name="bank_account_view_id" ref="accID_1_1101"/>
+        </record>
+
+    </data>
+</openerp>

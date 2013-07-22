@@ -1,335 +1,335 @@
-id,code,name,parent_id:id,type,user_type_id:id,reconcile
-accID_ID0,ID0,My Company,,view,account_type_view,False
-accID_BAL,BAL,Balance Sheet,accTemp_ID0,view,account_type_view,False
-accID_AKT,AKT,Aktiva,accTemp_BAL,view,account_type_view,False
-accID_1_1,1.1,Assets,accTemp_AKT,view,account_type_view,False
-accID_1_11,1.11,Current Assets,accID_1_1,view,account_type_view,False
-accID_1_1101,1.1101,Cash And Equivalent,accID_1_11,view,account_type_view,False
-accID_1_11011,1.11011,Cash,accID_1_1101,view,account_type_view,False
-accID_1_11012,1.11012,Bank,accID_1_1101,view,account_type_view,False
-accID_1_11013,1.11013,Cheque,accID_1_1101,view,account_type_view,False
-accID_1_1101301,1.1101301,Time-Deposit,accID_1_11013,liquidity,account_type_current_assets,True
-accID_1_1102,1.1102,Short-Term Investment,accID_1_11,view,account_type_view,False
-accID_1_11021,1.11021,Deposit,accID_1_1102,view,account_type_view,False
-accID_1_11022,1.11022,Other Short-Term Investment,accID_1_1102,view,account_type_view,False
-accID_1_1102201,1.1102201,Other Short-Term Investment,accID_1_11022,other,account_type_current_assets,True
-accID_1_1103,1.1103,Account Receivable,accID_1_11,view,account_type_view,False
-accID_1_110301,1.110301,Account Receivable – IDR,accID_1_1103,receivable,account_type_receivable,
-accID_1_11031,1.11031,Account Receivable Affiliation,accID_1_1103,view,account_type_view,False
-accID_1_1104,1.1104,Other Receivable,accID_1_11,view,account_type_view,False
-accID_1_110401,1.110401,Account Receivable – Office Employee,accID_1_1104,other,account_type_receivable,True
-accID_1_110402,1.110402,Account Receivable – Factory Employee,accID_1_1104,other,account_type_receivable,True
-accID_1_110403,1.110403,Interest Receivable,accID_1_1104,other,account_type_receivable,True
-accID_1_110404,1.110404,Account Receivable For Internal,accID_1_1104,other,account_type_receivable,True
-accID_1_110499,1.110499,Other Receivable,accID_1_1104,other,account_type_receivable,True
-accID_1_1105,1.1105,Purchase Advance,accID_1_11,view,account_type_view,False
-accID_1_110501,1.110501,Advance Payment For Purchase,accID_1_1105,view,account_type_view,False
-accID_1_11050101,1.11050101,Advance Payment For Purchase – IDR,accID_1_110501,other,account_type_current_assets,
-accID_1_110502,1.110502,Prepaid Tax,accID_1_1105,view,account_type_view,False
-accID_1_11050201,1.11050201,PPH 22 Import,accID_1_110502,other,account_type_input_tax,True
-accID_1_11050202,1.11050202,PPH 22 DN,accID_1_110502,other,account_type_input_tax,True
-accID_1_11050203,1.11050203,PPH 23/26,accID_1_110502,other,account_type_input_tax,True
-accID_1_11050204,1.11050204,PPH 25/29,accID_1_110502,other,account_type_input_tax,True
-accID_1_11050205,1.11050205,PPH 21/29,accID_1_110502,other,account_type_input_tax,True
-accID_1_11050206,1.11050206,Fiskal,accID_1_110502,other,account_type_input_tax,True
-accID_1_11050207,1.11050207,VAT – In,accID_1_110502,other,account_type_input_tax,True
-accID_1_1106,1.1106,Prepaid Expense,accID_1_11,view,account_type_view,False
-accID_1_110601,1.110601,Prepaid Insurance,accID_1_1106,other,account_type_current_assets,True
-accID_1_110602,1.110602,Prepaid Bank Provision,accID_1_1106,other,account_type_current_assets,True
-accID_1_110603,1.110603,Prepaid Rent,accID_1_1106,other,account_type_current_assets,True
-accID_1_110604,1.110604,Cash Advance,accID_1_1106,other,account_type_current_assets,True
-accID_1_110605,1.110605,Cash Advance Overseas,accID_1_1106,other,account_type_current_assets,True
-accID_1_1107,1.1107,Inventory,accID_1_11,view,account_type_view,False
-accID_1_110701,1.110701,Inventory – Finished Good,accID_1_1107,view,account_type_view,False
-accID_1_11070101,1.11070101,Inventory – Finished Good,accID_1_110701,other,account_type_current_assets,False
-accID_1_110702,1.110702,Inventory – Good In Transit,accID_1_1107,view,account_type_view,False
-accID_1_11070201,1.11070201,Inventory – Good In Transit,accID_1_110702,other,account_type_current_assets,False
-accID_1_110703,1.110703,Inventory – Raw Material,accID_1_1107,view,account_type_view,False
-accID_1_11070301,1.11070301,Inventory – Raw Material,accID_1_110703,other,account_type_current_assets,False
-accID_1_110704,1.110704,Inventory – Other Raw Material,accID_1_1107,view,account_type_view,False
-accID_1_11070401,1.11070401,Inventory – Other Raw Material,accID_1_110704,other,account_type_current_assets,False
-accID_1_110705,1.110705,Inventory WIP,accID_1_1107,view,account_type_view,False
-accID_1_11070501,1.11070501,Inventory WIP,accID_1_110705,other,account_type_current_assets,False
-accID_1_110706,1.110706,Inventory Supplies,accID_1_1107,view,account_type_view,False
-accID_1_11070601,1.11070601,Inventory Supplies,accID_1_110706,other,account_type_current_assets,False
-accID_1_110707,1.110707,Inventory – Production Waste,accID_1_1107,view,account_type_view,False
-accID_1_11070701,1.11070701,Inventory – Production Waste,accID_1_110707,other,account_type_current_assets,False
-accID_1_1108,1.1108,Depsoit For Purchase,accID_1_11,view,account_type_view,False
-accID_1_110801,1.110801,Depsoit For Purchase – IDR,accID_1_1108,other,account_type_current_assets,False
-accID_1_12,1.12,Fixed Assets,accID_1_1,view,account_type_view,False
-accID_1_1201,1.1201,Fixed Assets,accID_1_12,view,account_type_view,False
-accID_1_120101,1.120101,Land,accID_1_1201,other,account_type_fixed_assets,False
-accID_1_120102,1.120102,Building,accID_1_1201,other,account_type_fixed_assets,False
-accID_1_120103,1.120103,Machinery,accID_1_1201,other,account_type_fixed_assets,False
-accID_1_120104,1.120104,"Tools, Supplies And Machinery Equipment",accID_1_1201,other,account_type_fixed_assets,False
-accID_1_120105,1.120105,Office Furniture And Fixture,accID_1_1201,other,account_type_fixed_assets,False
-accID_1_120106,1.120106,Vehicle,accID_1_1201,other,account_type_fixed_assets,False
-accID_1_1202,1.1202,Accumulated Depreciation,accID_1_12,view,account_type_view,False
-accID_1_120201,1.120201,Accumulated Depreciation – Building,accID_1_1202,other,account_type_acc_depreciation,False
-accID_1_120202,1.120202,Accumulated Depreciation – Machinery,accID_1_1202,other,account_type_acc_depreciation,False
-accID_1_120203,1.120203,"Accumulated Depreciation – Tools, Supplies And Machinery Equipment",accID_1_1202,other,account_type_acc_depreciation,False
-accID_1_120204,1.120204,Accumulated Depreciation – Office Furniture And Fixture,accID_1_1202,other,account_type_acc_depreciation,False
-accID_1_120205,1.120205,Accumulated Depreciation – Vehicle,accID_1_1202,other,account_type_acc_depreciation,False
-accID_1_1299,1.1299,Other Assets,accID_1_12,view,account_type_view,False
-accID_1_129901,1.129901,Other Assets,accID_1_1299,other,account_type_fixed_assets,False
-accID_PSV,PSV,Pasiva,accTemp_BAL,view,account_type_view,False
-accID_2_2,2.2,Liability,accTemp_PSV,view,account_type_view,False
-accID_2_201,2.201,Current Liability,accID_2_2,view,account_type_view,False
-accID_2_20101,2.20101,Trade Payable,accID_2_201,view,account_type_view,False
-accID_2_2010101,2.2010101,Trade Payable – IDR,accID_2_20101,payable,account_type_payable,True
-accID_2_2010102,2.2010102,Trade Payable – USD,accID_2_20101,payable,account_type_payable,True
-accID_2_20102,2.20102,Trade Payable – Import,accID_2_201,view,account_type_view,False
-accID_2_2010201,2.2010201,Trade Payable – Import,accID_2_20102,payable,account_type_payable,True
-accID_2_20103,2.20103,Bank Loan,accID_2_201,view,account_type_view,False
-accID_2_20104,2.20104,Purchase Discount,accID_2_201,view,account_type_view,False
-accID_2_2010401,2.2010401,Purchase Discount – IDR,accID_2_20104,other,account_type_current_liabilities,False
-accID_2_20105,2.20105,Purchase Return,accID_2_201,view,account_type_view,False
-accID_2_2010501,2.2010501,Purchase Return – IDR,accID_2_20105,other,account_type_current_liabilities,False
-accID_2_20106,2.20106,Other Liability,accID_2_201,view,account_type_view,False
-accID_2_2010601,2.2010601,Liability For Cost Purchase,accID_2_20106,other,account_type_current_liabilities,True
-accID_2_2010602,2.2010602,Liability For Internal,accID_2_20106,other,account_type_current_liabilities,True
-accID_2_20107,2.20107,Trade Payable – Affiliation,accID_2_201,view,account_type_view,False
-accID_2_2010701,2.2010701,Trade Payable Affiliation – IDR,accID_2_20107,payable,account_type_payable,True
-accID_2_202,2.202,Sales Advance,accID_2_2,view,account_type_view,False
-accID_2_20201,2.20201,Advance Payment For Sales,accID_2_202,view,account_type_view,False
-accID_2_2020101,2.2020101,Advance Payment For Sales – IDR,accID_2_20201,other,account_type_current_liabilities,True
-accID_2_20202,2.20202,Tax Payable,accID_2_202,view,account_type_view,False
-accID_2_2020201,2.2020201,PPH 21 Payable,accID_2_20202,other,account_type_output_tax,True
-accID_2_2020202,2.2020202,PPH 22/23/26 Payable,accID_2_20202,other,account_type_output_tax,True
-accID_2_2020203,2.2020203,PPH 25/29 Payable,accID_2_20202,other,account_type_output_tax,True
-accID_2_2020204,2.2020204,VAT – Out,accID_2_20202,other,account_type_output_tax,True
-accID_2_203,2.203,Accrued Expense,accID_2_2,view,account_type_view,False
-accID_2_20301,2.20301,Accrued Expense,accID_2_203,other,account_type_current_liabilities,True
-accID_2_20302,2.20302,Account Payable Internal,accID_2_203,other,account_type_current_liabilities,True
-accID_2_204,2.204,Deposit For Sales,accID_2_2,view,account_type_view,False
-accID_2_20401,2.20401,Deposit For Sales – IDR,accID_2_204,other,account_type_current_liabilities,True
-accID_3_3,3.3,Equity,accTemp_PSV,view,account_type_view,False
-accID_3_301,3.301,Stockholders Equity,accID_3_3,view,account_type_view,False
-accID_3_30101,3.30101,Common Stock,accID_3_301,other,account_type_equity,False
-accID_3_30102,3.30102,Preferred Stock,accID_3_301,other,account_type_equity,False
-accID_3_30103,3.30103,Retained Earnings,accID_3_301,other,account_type_equity,False
-accID_3_30104,3.30104,Current Year Earnings,accID_3_301,consolidation,account_type_profit_and_loss,False
-accID_3_309,3.309,Other Equity,accID_3_3,view,account_type_view,False
-accID_3_30901,3.30901,Other Equity,accID_3_309,other,account_type_equity,False
-accID_3_30902,3.30902,Profit Or Loss On Asset Revaluation,accID_3_309,other,account_type_equity,False
-accID_PL,PL,Profit Loss,accTemp_ID0,view,account_type_view,False
-accID_4_4,4.4,Revenue,accTemp_PL,view,account_type_view,False
-accID_4_401,4.401,Sales Revenue,accID_4_4,view,account_type_view,False
-accID_4_40101,4.40101,Sales Revenue – IDR,accID_4_401,other,account_type_income,False
-accID_4_402,4.402,Sales Return,accID_4_4,view,account_type_view,False
-accID_4_40201,4.40201,Sales Return – IDR,accID_4_402,other,account_type_income,False
-accID_4_403,4.403,Sales Price Different,accID_4_4,view,account_type_view,False
-accID_4_40301,4.40301,Sales Price Different – IDR,accID_4_403,other,account_type_income,False
-accID_4_404,4.404,Sales Discount,accID_4_4,view,account_type_view,False
-accID_4_40401,4.40401,Sales Discount – IDR,accID_4_404,other,account_type_income,False
-accID_5_5,5.5,Cost Of Goods Sold,accTemp_PL,view,account_type_view,False
-accID_5_501,5.501,Cost Of Goods Sold – Local,accID_5_5,other,account_type_cogs,False
-accID_5_502,5.502,Cost Of Goods Sold – Export,accID_5_5,other,account_type_cogs,False
-accID_5_503,5.503,Under Applied COGS,accID_5_5,other,account_type_cogs,False
-accID_5_504,5.504,Over Applied COGS,accID_5_5,other,account_type_cogs,False
-accID_6_6,6.6,Other Revenue,accTemp_PL,view,account_type_view,False
-accID_6_601,6.601,Other Revenue,accID_6_6,other,account_type_income,False
-accID_6_602,6.602,Purchase Discount,accID_6_6,other,account_type_income,False
-accID_6_603,6.603,Gain Or Loss On Asset Sales,accID_6_6,other,account_type_income,False
-accID_7_7,7.7,Production Cost,accTemp_PL,view,account_type_view,False
-accID_7_701,7.701,Direct Material,accID_7_7,view,account_type_view,False
-accID_7_70101,7.70101,Direct Material,accID_7_701,other,account_type_expense,False
-accID_7_702,7.702,Direct Production Cost,accID_7_7,view,account_type_view,False
-accID_7_70201,7.70201,Wages Expense For Direct Labour,accID_7_702,view,account_type_view,False
-accID_7_7020101,7.7020101,Wages Expense For Direct Labour,accID_7_70201,other,account_type_expense,False
-accID_7_7020102,7.7020102,THR Expense For Direct Labour,accID_7_70201,other,account_type_expense,False
-accID_7_7020103,7.7020103,Bonus For Direct Labour,accID_7_70201,other,account_type_expense,False
-accID_7_7020104,7.7020104,Leave Expense For Direct Labour,accID_7_70201,other,account_type_expense,False
-accID_7_7020105,7.7020105,Severence Expense For Direct Labour,accID_7_70201,other,account_type_expense,False
-accID_7_7020106,7.7020106,Wages Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False
-accID_7_7020107,7.7020107,THR Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False
-accID_7_7020108,7.7020108,Bonus For Direct Labour Applied,accID_7_70201,other,account_type_expense,False
-accID_7_7020109,7.7020109,Leave Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False
-accID_7_7020110,7.7020110,Severence Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False
-accID_7_70202,7.70202,Meal Allowance For Direct Labour,accID_7_702,view,account_type_view,False
-accID_7_7020201,7.7020201,Meal Allowance For Direct Labour,accID_7_70202,other,account_type_expense,False
-accID_7_7020202,7.7020202,Meal Allowance For Direct Labour Applied,accID_7_70202,other,account_type_expense,False
-accID_7_70203,7.70203,Medical Allowance For Direct Labour,accID_7_702,view,account_type_view,False
-accID_7_7020301,7.7020301,Medical Allowance For Direct Labour,accID_7_70203,other,account_type_expense,False
-accID_7_7020302,7.7020302,Medical Allowance For Direct Labour Applied,accID_7_70203,other,account_type_expense,False
-accID_7_70204,7.70204,Insurance Expense For Direct Labour,accID_7_702,view,account_type_view,False
-accID_7_7020401,7.7020401,Insurance Expense For Direct Labour,accID_7_70204,other,account_type_expense,False
-accID_7_7020402,7.7020402,Insurance Expense For Direct Labour Applied,accID_7_70204,other,account_type_expense,False
-accID_7_70205,7.70205,Transportation Expense For Direct Labour,accID_7_702,view,account_type_view,False
-accID_7_7020501,7.7020501,Transportation Expense For Direct Labour,accID_7_70205,other,account_type_expense,False
-accID_7_7020502,7.7020502,Transportation Expense For Direct Labour Applied,accID_7_70205,other,account_type_expense,False
-accID_7_703,7.703,Indirect Production Cost,accID_7_7,view,account_type_view,False
-accID_7_70301,7.70301,Indirect Material,accID_7_703,view,account_type_view,False
-accID_7_7030101,7.7030101,Indirect Material,accID_7_70301,other,account_type_expense,False
-accID_7_7030102,7.7030102,Severence Expense For Indirect Labour,accID_7_70301,other,account_type_expense,False
-accID_7_7030103,7.7030103,Severence Expense For Indirect Labour Applied,accID_7_70301,other,account_type_expense,False
-accID_7_7030104,7.7030104,Leave Expense For Indirect Labour,accID_7_70301,other,account_type_expense,False
-accID_7_7030105,7.7030105,Leave Expense For Indirect Labour Applied,accID_7_70301,other,account_type_expense,False
-accID_7_70302,7.70302,Indirect Labour,accID_7_703,view,account_type_view,False
-accID_7_7030201,7.7030201,Wages Expense For Indirect Labour,accID_7_70302,view,account_type_view,False
-accID_7_703020101,7.703020101,Wages Expense For Indirect Labour,accID_7_7030201,other,account_type_expense,False
-accID_7_703020102,7.703020102,Wages Expense For Indirect Labour Applied,accID_7_7030201,other,account_type_expense,False
-accID_7_703020103,7.703020103,THR Expense For Indirect Labour,accID_7_7030201,other,account_type_expense,False
-accID_7_703020104,7.703020104,THR Expense For Indirect Labour Applied,accID_7_7030201,other,account_type_expense,False
-accID_7_703020105,7.703020105,Bonus For Indirect Labour,accID_7_7030201,other,account_type_expense,False
-accID_7_703020106,7.703020106,Bonus For Indirect Labour Applied,accID_7_7030201,other,account_type_expense,False
-accID_7_7030202,7.7030202,Meal Allowance For Indirect Labour,accID_7_703,view,account_type_view,False
-accID_7_703020201,7.703020201,Meal Allowance For Indirect Labour,accID_7_7030202,other,account_type_expense,False
-accID_7_703020202,7.703020202,Meal Allowance For Indirect Labour Applied,accID_7_7030202,other,account_type_expense,False
-accID_7_7030203,7.7030203,Medical Allowance For Indirect Labour,accID_7_703,view,account_type_view,False
-accID_7_703020301,7.703020301,Medical Allowance For Indirect Labour,accID_7_7030203,other,account_type_expense,False
-accID_7_703020302,7.703020302,Medical Allowance For Indirect Labour Applied,accID_7_7030203,other,account_type_expense,False
-accID_7_7030204,7.7030204,Insurance Expense For Indirect Labour,accID_7_703,view,account_type_view,False
-accID_7_703020401,7.703020401,Insurance Expense For Indirect Labour,accID_7_7030204,other,account_type_expense,False
-accID_7_703020402,7.703020402,Insurance Expense For Indirect Labour Applied,accID_7_7030204,other,account_type_expense,False
-accID_7_7030205,7.7030205,Transportation Expense For Indirect Labour,accID_7_703,view,account_type_view,False
-accID_7_703020501,7.703020501,Transportation Expense For Indirect Labour,accID_7_7030205,other,account_type_expense,False
-accID_7_703020502,7.703020502,Transportation Expense For Indirect Labour Applied,accID_7_7030205,other,account_type_expense,False
-accID_7_70303,7.70303,Other Indirect Production Cost,accID_7_703,view,account_type_view,False
-accID_7_7030301,7.7030301,Factory Electricity And Fuel,accID_7_70303,view,account_type_view,False
-accID_7_703030101,7.703030101,Factory Electrical,accID_7_7030301,other,account_type_expense,False
-accID_7_703030102,7.703030102,Factory Electricity Applied,accID_7_7030301,other,account_type_expense,False
-accID_7_703030103,7.703030103,Factory Fuel,accID_7_7030301,other,account_type_expense,False
-accID_7_703030104,7.703030104,Factory Fuel Applied,accID_7_7030301,other,account_type_expense,False
-accID_7_7030302,7.7030302,Factory Waste Expense,accID_7_70303,view,account_type_view,False
-accID_7_703030201,7.703030201,Factory Waste Expense,accID_7_7030302,other,account_type_expense,False
-accID_7_703030202,7.703030202,Factory Waste Expense Applied,accID_7_7030302,other,account_type_expense,False
-accID_7_7030303,7.7030303,Supplies Production Expense,accID_7_70303,view,account_type_view,False
-accID_7_703030301,7.703030301,Supplies Production Expense,accID_7_7030303,other,account_type_expense,False
-accID_7_703030302,7.703030302,Supplies Production Expense Applied,accID_7_7030303,other,account_type_expense,False
-accID_7_7030304,7.7030304,Packaging Expense,accID_7_70303,view,account_type_view,False
-accID_7_703030401,7.703030401,Packaging Expense,accID_7_7030304,other,account_type_expense,False
-accID_7_703030402,7.703030402,Packaging Expense Applied,accID_7_7030304,other,account_type_expense,False
-accID_7_7030305,7.7030305,Production Asset Expense,accID_7_70303,view,account_type_view,False
-accID_7_703030501,7.703030501,Maintenance Expense For Building And Factory Facility,accID_7_7030305,other,account_type_expense,False
-accID_7_703030502,7.703030502,Insurance Expense For Factory Building,accID_7_7030305,other,account_type_expense,False
-accID_7_703030503,7.703030503,Maintenance Expense – Machinery,accID_7_7030305,other,account_type_expense,False
-accID_7_703030504,7.703030504,Maintenance Expense – Machinery Applied,accID_7_7030305,other,account_type_expense,False
-accID_7_703030505,7.703030505,Insurance Expense – Machinery,accID_7_7030305,other,account_type_expense,False
-accID_7_703030506,7.703030506,Insurance Expense – Machinery Applied,accID_7_7030305,other,account_type_expense,False
-accID_7_703030507,7.703030507,Genset – Maintenance Expense,accID_7_7030305,other,account_type_expense,False
-accID_7_703030508,7.703030508,Genset – Maintenance Expense Applied,accID_7_7030305,other,account_type_expense,False
-accID_7_703030509,7.703030509,Insurance Expense – Genset,accID_7_7030305,other,account_type_expense,False
-accID_7_703030510,7.703030510,Insurance Expense – Genset Applied,accID_7_7030305,other,account_type_expense,False
-accID_7_703030511,7.703030511,Depreciation Expense Of Production Asset,accID_7_7030305,other,account_type_expense,False
-accID_7_703030512,7.703030512,Depreciation Expense Of Building,accID_7_7030305,other,account_type_expense,False
-accID_7_703030513,7.703030513,Depreciation Expense Of Machinery,accID_7_7030305,other,account_type_expense,False
-accID_7_703030514,7.703030514,Depreciation Expense Of Office Furniture And Fixture,accID_7_7030305,other,account_type_expense,False
-accID_7_703030515,7.703030515,Depreciation Expense Of Tools Supplies And Machinery Equipment,accID_7_7030305,other,account_type_expense,False
-accID_7_703030516,7.703030516,Depreciation Expense Of Vehicles,accID_7_7030305,other,account_type_expense,False
-accID_7_799,7.799,Other Production Cost,accID_7_7,view,account_type_view,False
-accID_7_79901,7.79901,Other Production Cost,accID_7_799,other,account_type_expense,False
-accID_7_79902,7.79902,Sub Contract Expense,accID_7_799,other,account_type_expense,False
-accID_8_8,8.8,Operational Cost,accTemp_PL,view,account_type_view,False
-accID_8_801,8.801,General And Administrative Expense,accID_8_8,view,account_type_view,False
-accID_8_80101,8.80101,Labour Expense – Staff,accID_8_801,view,account_type_view,False
-accID_8_8010101,8.8010101,Wages Expense – Staff,accID_8_80101,view,account_type_view,False
-accID_8_801010101,8.801010101,Wages Expense – Staff,accID_8_8010101,other,account_type_expense,False
-accID_8_801010102,8.801010102,THR Expense – Staff,accID_8_8010101,other,account_type_expense,False
-accID_8_801010103,8.801010103,Bonus Expense – Staff,accID_8_8010101,other,account_type_expense,False
-accID_8_801010104,8.801010104,Leave Expense – Staff,accID_8_8010101,other,account_type_expense,False
-accID_8_801010105,8.801010105,Severance Expense – Staff,accID_8_8010101,other,account_type_expense,False
-accID_8_8010102,8.8010102,Meal Allowance – Staff,accID_8_80101,view,account_type_view,False
-accID_8_801010201,8.801010201,Meal Allowance – Staff,accID_8_8010102,other,account_type_expense,False
-accID_8_8010103,8.8010103,Medical Allowance – Staff,accID_8_80101,view,account_type_view,False
-accID_8_801010301,8.801010301,Medical Allowance – Staff,accID_8_8010103,other,account_type_expense,False
-accID_8_8010104,8.8010104,Insurance Expense – Staff,accID_8_80101,view,account_type_view,False
-accID_8_801010401,8.801010401,Insurance Expense – Staff,accID_8_8010104,other,account_type_expense,False
-accID_8_8010105,8.8010105,Transportation Expense – Staff,accID_8_80101,view,account_type_view,False
-accID_8_801010501,8.801010501,Transportation Expense – Staff,accID_8_8010105,other,account_type_expense,False
-accID_8_80102,8.80102,Office Electricity,accID_8_801,view,account_type_view,False
-accID_8_8010201,8.8010201,Office Electricity,accID_8_80102,other,account_type_expense,False
-accID_8_80103,8.80103,Office Water Expense,accID_8_801,view,account_type_view,False
-accID_8_8010301,8.8010301,Office Water Expense,accID_8_80103,other,account_type_expense,False
-accID_8_80104,8.80104,Communication Expense – Telephone,accID_8_801,view,account_type_view,False
-accID_8_8010401,8.8010401,Office Communication Expense – Telephone,accID_8_80104,other,account_type_expense,False
-accID_8_8010402,8.8010402,Factory Communication Expense – Telephone,accID_8_80104,other,account_type_expense,False
-accID_8_80105,8.80105,Utilities Expense – Stationary,accID_8_801,view,account_type_view,False
-accID_8_8010501,8.8010501,Office Utilities Expense – Stationary,accID_8_80105,other,account_type_expense,False
-accID_8_8010502,8.8010502,Factory Utilities Expense – Stationary,accID_8_80105,other,account_type_expense,False
-accID_8_80106,8.80106,Vehicle Expense,accID_8_801,view,account_type_view,False
-accID_8_8010601,8.8010601,Operation Vehicle Expense,accID_8_80106,view,account_type_view,False
-accID_8_801060101,8.801060101,Office Operation Vehicle Expense,accID_8_8010601,other,account_type_expense,False
-accID_8_801060102,8.801060102,Factory Operation Vehicle Expense,accID_8_8010601,other,account_type_expense,False
-accID_8_8010602,8.8010602,Vehicle Maintenance Expense,accID_8_80106,view,account_type_view,False
-accID_8_801060201,8.801060201,Office Vehicle Maintenance Expense,accID_8_8010602,other,account_type_expense,False
-accID_8_801060202,8.801060202,Factory Vehicle Maintenance Expense,accID_8_8010602,other,account_type_expense,False
-accID_8_80107,8.80107,Entertainment Expense,accID_8_801,view,account_type_view,False
-accID_8_8010701,8.8010701,Guest And Entertainment Expense,accID_8_80107,other,account_type_expense,False
-accID_8_80108,8.80108,Transportation Expense,accID_8_801,view,account_type_view,False
-accID_8_8010801,8.8010801,Transportation Expense,accID_8_80108,other,account_type_expense,False
-accID_8_80199,8.80199,Other General And Administrative Expense,accID_8_801,view,account_type_view,False
-accID_8_8019901,8.8019901,Other General And Administrative Expense,accID_8_80199,other,account_type_expense,False
-accID_8_8019902,8.8019902,Rent Expense,accID_8_80199,other,account_type_expense,False
-accID_8_8019903,8.8019903,Charitable Donations Expense,accID_8_80199,other,account_type_expense,False
-accID_8_802,8.802,Sales Expense,accID_8_8,view,account_type_view,False
-accID_8_80201,8.80201,Freight Expense – Sales,accID_8_802,view,account_type_view,False
-accID_8_8020101,8.8020101,Freight Expense – Sales,accID_8_80201,other,account_type_expense,False
-accID_8_80202,8.80202,Sales Commision,accID_8_802,view,account_type_view,False
-accID_8_8020201,8.8020201,Sales Commision,accID_8_80202,other,account_type_expense,False
-accID_8_80203,8.80203,Promotion And Advertising,accID_8_802,view,account_type_view,False
-accID_8_8020301,8.8020301,Promotion And Advertising,accID_8_80203,other,account_type_expense,False
-accID_8_80204,8.80204,Sales Transportation Expense,accID_8_802,view,account_type_view,False
-accID_8_8020401,8.8020401,Sales Transportation Expense,accID_8_80204,other,account_type_expense,False
-accID_8_80205,8.80205,Sales Entertainment Expense,accID_8_802,view,account_type_view,False
-accID_8_8020501,8.8020501,Sales Entertainment Expense,accID_8_80205,other,account_type_expense,False
-accID_8_80206,8.80206,Bad Debt Expense,accID_8_802,view,account_type_view,False
-accID_8_8020601,8.8020601,Bad Debt Expense,accID_8_80206,other,account_type_expense,False
-accID_8_80299,8.80299,Other Sales Expense,accID_8_802,view,account_type_view,False
-accID_8_8029901,8.8029901,Other Sales Expense,accID_8_80299,other,account_type_expense,False
-accID_8_803,8.803,Export Import Expense,accID_8_8,view,account_type_view,False
-accID_8_80301,8.80301,Export Expense,accID_8_803,other,account_type_expense,False
-accID_8_80302,8.80302,Bea Masuk,accID_8_803,other,account_type_expense,False
-accID_8_80303,8.80303,Provision Of Open L/C,accID_8_803,other,account_type_expense,False
-accID_8_80304,8.80304,Telex And Amandement L/C Expense,accID_8_803,other,account_type_expense,False
-accID_8_80305,8.80305,L/C Insurance Expense,accID_8_803,other,account_type_expense,False
-accID_8_80306,8.80306,PIUD/PB Issued Expense,accID_8_803,other,account_type_expense,False
-accID_8_80307,8.80307,PNBP/Jasa Pengerjaan PIB,accID_8_803,other,account_type_expense,False
-accID_8_804,8.804,Oparation Asset Expense,accID_8_8,view,account_type_view,False
-accID_8_80401,8.80401,Maintenance Expense – Operation Asset,accID_8_804,other,account_type_expense,False
-accID_8_80402,8.80402,Insurance Expense,accID_8_804,view,account_type_view,False
-accID_8_8040201,8.8040201,Insurance Expense – Building,accID_8_80402,view,account_type_view,False
-accID_8_804020101,8.804020101,Insurance Expense – Office Building,accID_8_8040201,other,account_type_expense,False
-accID_8_8040202,8.8040202,Insurance Expense – Vehicle,accID_8_80402,view,account_type_view,False
-accID_8_804020201,8.804020201,Insurance Expense – Office Vehicle,accID_8_8040202,other,account_type_expense,False
-accID_8_804020202,8.804020202,Insurance Expense – Factory Vehicle,accID_8_8040202,other,account_type_expense,False
-accID_8_8040203,8.8040203,Depreciation Expense For Operational Asset,accID_8_80402,other,account_type_expense,False
-accID_8_805,8.805,Tax Expense,accID_8_8,view,account_type_view,False
-accID_8_80501,8.80501,PBB,accID_8_805,other,account_type_expense,False
-accID_8_80502,8.80502,PPH 21 Office And Factory,accID_8_805,other,account_type_expense,False
-accID_8_80503,8.80503,PPH 21 Factory,accID_8_805,other,account_type_expense,False
-accID_8_80504,8.80504,PPH 23/26,accID_8_805,other,account_type_expense,False
-accID_8_80505,8.80505,PPH 25,accID_8_805,other,account_type_expense,False
-accID_8_80506,8.80506,PPH 29/SPT,accID_8_805,other,account_type_expense,False
-accID_8_80507,8.80507,PPH 22 Import,accID_8_805,other,account_type_expense,False
-accID_8_80508,8.80508,PPH 22 DN,accID_8_805,other,account_type_expense,False
-accID_8_806,8.806,"Biaya Materai, Iuran, Perizinan, Surat-surat",accID_8_8,view,account_type_view,False
-accID_8_80601,8.80601,Iuran/Sumbangan,accID_8_806,other,account_type_expense,False
-accID_8_80602,8.80602,Materai,accID_8_806,other,account_type_expense,False
-accID_8_80603,8.80603,Perizinan Dan Surat-surat,accID_8_806,other,account_type_expense,False
-accID_8_80604,8.80604,Mail Expense,accID_8_806,other,account_type_expense,False
-accID_8_899,8.899,Other Operational Expense,accID_8_8,view,account_type_view,False
-accID_8_89901,8.89901,Other Operational Expense,accID_8_899,other,account_type_expense,False
-accID_8_89902,8.89902,Freight Expense – Purchase,accID_8_899,other,account_type_expense,False
-accID_9_9,9.9,Miscellaneous Revenue And Cost,accTemp_PL,view,account_type_view,False
-accID_9_901,9.901,Other Income,accID_9_9,view,account_type_view,False
-accID_9_90101,9.90101,Interest Income,accID_9_901,view,account_type_view,False
-accID_9_9010101,9.9010101,Interest Income,accID_9_90101,other,account_type_income,False
-accID_9_90102,9.90102,Giro Service Income,accID_9_901,view,account_type_view,False
-accID_9_9010201,9.9010201,Giro Service Income,accID_9_90102,other,account_type_income,False
-accID_9_902,9.902,Other Expenses,accID_9_9,view,account_type_view,False
-accID_9_90201,9.90201,Interest Expense,accID_9_902,view,account_type_view,False
-accID_9_9020101,9.9020101,Interest Expense,accID_9_90201,other,account_type_expense,False
-accID_9_90202,9.90202,Gain/Loss Foreign Exchange,accID_9_902,view,account_type_view,False
-accID_9_9020201,9.9020201,Gain/Loss Foreign Exchange,accID_9_90202,other,account_type_expense,False
-accID_9_90203,9.90203,Other Income And Expense,accID_9_902,view,account_type_view,False
-accID_9_9020301,9.9020301,Other Income And Expense,accID_9_90203,other,account_type_expense,False
-accID_9_90204,9.90204,Lost Write-Off,accID_9_902,view,account_type_view,False
-accID_9_9020401,9.9020401,Lost Write-Off,accID_9_90204,other,account_type_expense,False
-accID_9_903,9.903,Bank Administrative Expense,accID_9_9,view,account_type_view,False
-accID_9_90301,9.90301,Giro Service Tax,accID_9_903,view,account_type_view,False
-accID_9_9030101,9.9030101,Giro Service Tax,accID_9_90301,other,account_type_expense,False
-accID_9_90302,9.90302,Bank Statement Printing Expense,accID_9_903,view,account_type_view,False
-accID_9_9030201,9.9030201,Bank Statement Printing Expense,accID_9_90302,other,account_type_expense,False
-accID_9_90303,9.90303,Bank Administration Expense,accID_9_903,view,account_type_view,False
-accID_9_9030301,9.9030301,Bank Administration Expense,accID_9_90303,other,account_type_expense,False
+id,code,name,parent_id:id,type,user_type/id,reconcile,chart_template_id/id
+accID_ID0,ID0,My Company,,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_BAL,BAL,Balance Sheet,accID_ID0,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_AKT,AKT,Aktiva,accID_BAL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1,1.1,Assets,accID_AKT,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11,1.11,Current Assets,accID_1_1,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1101,1.1101,Cash And Equivalent,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11011,1.11011,Cash,accID_1_1101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11012,1.11012,Bank,accID_1_1101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11013,1.11013,Cheque,accID_1_1101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1101301,1.1101301,Time-Deposit,accID_1_11013,liquidity,account_type_current_assets,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1102,1.1102,Short-Term Investment,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11021,1.11021,Deposit,accID_1_1102,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11022,1.11022,Other Short-Term Investment,accID_1_1102,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1102201,1.1102201,Other Short-Term Investment,accID_1_11022,other,account_type_current_assets,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1103,1.1103,Account Receivable,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110301,1.110301,Account Receivable – IDR,accID_1_1103,receivable,account_type_receivable,,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11031,1.11031,Account Receivable Affiliation,accID_1_1103,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1104,1.1104,Other Receivable,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110401,1.110401,Account Receivable – Office Employee,accID_1_1104,other,account_type_receivable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110402,1.110402,Account Receivable – Factory Employee,accID_1_1104,other,account_type_receivable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110403,1.110403,Interest Receivable,accID_1_1104,other,account_type_receivable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110404,1.110404,Account Receivable For Internal,accID_1_1104,other,account_type_receivable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110499,1.110499,Other Receivable,accID_1_1104,other,account_type_receivable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1105,1.1105,Purchase Advance,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110501,1.110501,Advance Payment For Purchase,accID_1_1105,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050101,1.11050101,Advance Payment For Purchase – IDR,accID_1_110501,other,account_type_current_assets,,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110502,1.110502,Prepaid Tax,accID_1_1105,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050201,1.11050201,PPH 22 Import,accID_1_110502,other,account_type_input_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050202,1.11050202,PPH 22 DN,accID_1_110502,other,account_type_input_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050203,1.11050203,PPH 23/26,accID_1_110502,other,account_type_input_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050204,1.11050204,PPH 25/29,accID_1_110502,other,account_type_input_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050205,1.11050205,PPH 21/29,accID_1_110502,other,account_type_input_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050206,1.11050206,Fiskal,accID_1_110502,other,account_type_input_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11050207,1.11050207,VAT – In,accID_1_110502,other,account_type_input_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1106,1.1106,Prepaid Expense,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110601,1.110601,Prepaid Insurance,accID_1_1106,other,account_type_current_assets,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110602,1.110602,Prepaid Bank Provision,accID_1_1106,other,account_type_current_assets,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110603,1.110603,Prepaid Rent,accID_1_1106,other,account_type_current_assets,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110604,1.110604,Cash Advance,accID_1_1106,other,account_type_current_assets,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110605,1.110605,Cash Advance Overseas,accID_1_1106,other,account_type_current_assets,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1107,1.1107,Inventory,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110701,1.110701,Inventory – Finished Good,accID_1_1107,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11070101,1.11070101,Inventory – Finished Good,accID_1_110701,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110702,1.110702,Inventory – Good In Transit,accID_1_1107,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11070201,1.11070201,Inventory – Good In Transit,accID_1_110702,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110703,1.110703,Inventory – Raw Material,accID_1_1107,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11070301,1.11070301,Inventory – Raw Material,accID_1_110703,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110704,1.110704,Inventory – Other Raw Material,accID_1_1107,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11070401,1.11070401,Inventory – Other Raw Material,accID_1_110704,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110705,1.110705,Inventory WIP,accID_1_1107,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11070501,1.11070501,Inventory WIP,accID_1_110705,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110706,1.110706,Inventory Supplies,accID_1_1107,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11070601,1.11070601,Inventory Supplies,accID_1_110706,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110707,1.110707,Inventory – Production Waste,accID_1_1107,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_11070701,1.11070701,Inventory – Production Waste,accID_1_110707,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1108,1.1108,Depsoit For Purchase,accID_1_11,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_110801,1.110801,Depsoit For Purchase – IDR,accID_1_1108,other,account_type_current_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_12,1.12,Fixed Assets,accID_1_1,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1201,1.1201,Fixed Assets,accID_1_12,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120101,1.120101,Land,accID_1_1201,other,account_type_fixed_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120102,1.120102,Building,accID_1_1201,other,account_type_fixed_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120103,1.120103,Machinery,accID_1_1201,other,account_type_fixed_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120104,1.120104,"Tools, Supplies And Machinery Equipment",accID_1_1201,other,account_type_fixed_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120105,1.120105,Office Furniture And Fixture,accID_1_1201,other,account_type_fixed_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120106,1.120106,Vehicle,accID_1_1201,other,account_type_fixed_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1202,1.1202,Accumulated Depreciation,accID_1_12,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120201,1.120201,Accumulated Depreciation – Building,accID_1_1202,other,account_type_acc_depreciation,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120202,1.120202,Accumulated Depreciation – Machinery,accID_1_1202,other,account_type_acc_depreciation,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120203,1.120203,"Accumulated Depreciation – Tools, Supplies And Machinery Equipment",accID_1_1202,other,account_type_acc_depreciation,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120204,1.120204,Accumulated Depreciation – Office Furniture And Fixture,accID_1_1202,other,account_type_acc_depreciation,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_120205,1.120205,Accumulated Depreciation – Vehicle,accID_1_1202,other,account_type_acc_depreciation,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_1299,1.1299,Other Assets,accID_1_12,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_1_129901,1.129901,Other Assets,accID_1_1299,other,account_type_fixed_assets,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_PSV,PSV,Pasiva,accID_BAL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2,2.2,Liability,accID_PSV,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_201,2.201,Current Liability,accID_2_2,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20101,2.20101,Trade Payable,accID_2_201,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010101,2.2010101,Trade Payable – IDR,accID_2_20101,payable,account_type_payable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010102,2.2010102,Trade Payable – USD,accID_2_20101,payable,account_type_payable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20102,2.20102,Trade Payable – Import,accID_2_201,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010201,2.2010201,Trade Payable – Import,accID_2_20102,payable,account_type_payable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20103,2.20103,Bank Loan,accID_2_201,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20104,2.20104,Purchase Discount,accID_2_201,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010401,2.2010401,Purchase Discount – IDR,accID_2_20104,other,account_type_current_liabilities,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20105,2.20105,Purchase Return,accID_2_201,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010501,2.2010501,Purchase Return – IDR,accID_2_20105,other,account_type_current_liabilities,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20106,2.20106,Other Liability,accID_2_201,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010601,2.2010601,Liability For Cost Purchase,accID_2_20106,other,account_type_current_liabilities,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010602,2.2010602,Liability For Internal,accID_2_20106,other,account_type_current_liabilities,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20107,2.20107,Trade Payable – Affiliation,accID_2_201,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2010701,2.2010701,Trade Payable Affiliation – IDR,accID_2_20107,payable,account_type_payable,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_202,2.202,Sales Advance,accID_2_2,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20201,2.20201,Advance Payment For Sales,accID_2_202,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2020101,2.2020101,Advance Payment For Sales – IDR,accID_2_20201,other,account_type_current_liabilities,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20202,2.20202,Tax Payable,accID_2_202,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2020201,2.2020201,PPH 21 Payable,accID_2_20202,other,account_type_output_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2020202,2.2020202,PPH 22/23/26 Payable,accID_2_20202,other,account_type_output_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2020203,2.2020203,PPH 25/29 Payable,accID_2_20202,other,account_type_output_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_2020204,2.2020204,VAT – Out,accID_2_20202,other,account_type_output_tax,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_203,2.203,Accrued Expense,accID_2_2,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20301,2.20301,Accrued Expense,accID_2_203,other,account_type_current_liabilities,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20302,2.20302,Account Payable Internal,accID_2_203,other,account_type_current_liabilities,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_204,2.204,Deposit For Sales,accID_2_2,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_2_20401,2.20401,Deposit For Sales – IDR,accID_2_204,other,account_type_current_liabilities,True,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_3,3.3,Equity,accID_PSV,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_301,3.301,Stockholders Equity,accID_3_3,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_30101,3.30101,Common Stock,accID_3_301,other,account_type_equity,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_30102,3.30102,Preferred Stock,accID_3_301,other,account_type_equity,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_30103,3.30103,Retained Earnings,accID_3_301,other,account_type_equity,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_30104,3.30104,Current Year Earnings,accID_3_301,consolidation,account_type_profit_and_loss,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_309,3.309,Other Equity,accID_3_3,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_30901,3.30901,Other Equity,accID_3_309,other,account_type_equity,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_3_30902,3.30902,Profit Or Loss On Asset Revaluation,accID_3_309,other,account_type_equity,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_PL,PL,Profit Loss,accID_ID0,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_4,4.4,Revenue,accID_PL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_401,4.401,Sales Revenue,accID_4_4,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_40101,4.40101,Sales Revenue – IDR,accID_4_401,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_402,4.402,Sales Return,accID_4_4,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_40201,4.40201,Sales Return – IDR,accID_4_402,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_403,4.403,Sales Price Different,accID_4_4,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_40301,4.40301,Sales Price Different – IDR,accID_4_403,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_404,4.404,Sales Discount,accID_4_4,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_4_40401,4.40401,Sales Discount – IDR,accID_4_404,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_5_5,5.5,Cost Of Goods Sold,accID_PL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_5_501,5.501,Cost Of Goods Sold – Local,accID_5_5,other,account_type_cogs,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_5_502,5.502,Cost Of Goods Sold – Export,accID_5_5,other,account_type_cogs,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_5_503,5.503,Under Applied COGS,accID_5_5,other,account_type_cogs,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_5_504,5.504,Over Applied COGS,accID_5_5,other,account_type_cogs,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_6_6,6.6,Other Revenue,accID_PL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_6_601,6.601,Other Revenue,accID_6_6,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_6_602,6.602,Purchase Discount,accID_6_6,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_6_603,6.603,Gain Or Loss On Asset Sales,accID_6_6,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7,7.7,Production Cost,accID_PL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_701,7.701,Direct Material,accID_7_7,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70101,7.70101,Direct Material,accID_7_701,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_702,7.702,Direct Production Cost,accID_7_7,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70201,7.70201,Wages Expense For Direct Labour,accID_7_702,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020101,7.7020101,Wages Expense For Direct Labour,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020102,7.7020102,THR Expense For Direct Labour,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020103,7.7020103,Bonus For Direct Labour,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020104,7.7020104,Leave Expense For Direct Labour,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020105,7.7020105,Severence Expense For Direct Labour,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020106,7.7020106,Wages Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020107,7.7020107,THR Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020108,7.7020108,Bonus For Direct Labour Applied,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020109,7.7020109,Leave Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020110,7.7020110,Severence Expense For Direct Labour Applied,accID_7_70201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70202,7.70202,Meal Allowance For Direct Labour,accID_7_702,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020201,7.7020201,Meal Allowance For Direct Labour,accID_7_70202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020202,7.7020202,Meal Allowance For Direct Labour Applied,accID_7_70202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70203,7.70203,Medical Allowance For Direct Labour,accID_7_702,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020301,7.7020301,Medical Allowance For Direct Labour,accID_7_70203,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020302,7.7020302,Medical Allowance For Direct Labour Applied,accID_7_70203,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70204,7.70204,Insurance Expense For Direct Labour,accID_7_702,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020401,7.7020401,Insurance Expense For Direct Labour,accID_7_70204,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020402,7.7020402,Insurance Expense For Direct Labour Applied,accID_7_70204,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70205,7.70205,Transportation Expense For Direct Labour,accID_7_702,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020501,7.7020501,Transportation Expense For Direct Labour,accID_7_70205,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7020502,7.7020502,Transportation Expense For Direct Labour Applied,accID_7_70205,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703,7.703,Indirect Production Cost,accID_7_7,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70301,7.70301,Indirect Material,accID_7_703,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030101,7.7030101,Indirect Material,accID_7_70301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030102,7.7030102,Severence Expense For Indirect Labour,accID_7_70301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030103,7.7030103,Severence Expense For Indirect Labour Applied,accID_7_70301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030104,7.7030104,Leave Expense For Indirect Labour,accID_7_70301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030105,7.7030105,Leave Expense For Indirect Labour Applied,accID_7_70301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70302,7.70302,Indirect Labour,accID_7_703,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030201,7.7030201,Wages Expense For Indirect Labour,accID_7_70302,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020101,7.703020101,Wages Expense For Indirect Labour,accID_7_7030201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020102,7.703020102,Wages Expense For Indirect Labour Applied,accID_7_7030201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020103,7.703020103,THR Expense For Indirect Labour,accID_7_7030201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020104,7.703020104,THR Expense For Indirect Labour Applied,accID_7_7030201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020105,7.703020105,Bonus For Indirect Labour,accID_7_7030201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020106,7.703020106,Bonus For Indirect Labour Applied,accID_7_7030201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030202,7.7030202,Meal Allowance For Indirect Labour,accID_7_703,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020201,7.703020201,Meal Allowance For Indirect Labour,accID_7_7030202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020202,7.703020202,Meal Allowance For Indirect Labour Applied,accID_7_7030202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030203,7.7030203,Medical Allowance For Indirect Labour,accID_7_703,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020301,7.703020301,Medical Allowance For Indirect Labour,accID_7_7030203,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020302,7.703020302,Medical Allowance For Indirect Labour Applied,accID_7_7030203,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030204,7.7030204,Insurance Expense For Indirect Labour,accID_7_703,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020401,7.703020401,Insurance Expense For Indirect Labour,accID_7_7030204,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020402,7.703020402,Insurance Expense For Indirect Labour Applied,accID_7_7030204,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030205,7.7030205,Transportation Expense For Indirect Labour,accID_7_703,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020501,7.703020501,Transportation Expense For Indirect Labour,accID_7_7030205,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703020502,7.703020502,Transportation Expense For Indirect Labour Applied,accID_7_7030205,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_70303,7.70303,Other Indirect Production Cost,accID_7_703,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030301,7.7030301,Factory Electricity And Fuel,accID_7_70303,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030101,7.703030101,Factory Electrical,accID_7_7030301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030102,7.703030102,Factory Electricity Applied,accID_7_7030301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030103,7.703030103,Factory Fuel,accID_7_7030301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030104,7.703030104,Factory Fuel Applied,accID_7_7030301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030302,7.7030302,Factory Waste Expense,accID_7_70303,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030201,7.703030201,Factory Waste Expense,accID_7_7030302,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030202,7.703030202,Factory Waste Expense Applied,accID_7_7030302,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030303,7.7030303,Supplies Production Expense,accID_7_70303,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030301,7.703030301,Supplies Production Expense,accID_7_7030303,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030302,7.703030302,Supplies Production Expense Applied,accID_7_7030303,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030304,7.7030304,Packaging Expense,accID_7_70303,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030401,7.703030401,Packaging Expense,accID_7_7030304,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030402,7.703030402,Packaging Expense Applied,accID_7_7030304,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_7030305,7.7030305,Production Asset Expense,accID_7_70303,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030501,7.703030501,Maintenance Expense For Building And Factory Facility,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030502,7.703030502,Insurance Expense For Factory Building,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030503,7.703030503,Maintenance Expense – Machinery,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030504,7.703030504,Maintenance Expense – Machinery Applied,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030505,7.703030505,Insurance Expense – Machinery,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030506,7.703030506,Insurance Expense – Machinery Applied,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030507,7.703030507,Genset – Maintenance Expense,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030508,7.703030508,Genset – Maintenance Expense Applied,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030509,7.703030509,Insurance Expense – Genset,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030510,7.703030510,Insurance Expense – Genset Applied,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030511,7.703030511,Depreciation Expense Of Production Asset,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030512,7.703030512,Depreciation Expense Of Building,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030513,7.703030513,Depreciation Expense Of Machinery,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030514,7.703030514,Depreciation Expense Of Office Furniture And Fixture,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030515,7.703030515,Depreciation Expense Of Tools Supplies And Machinery Equipment,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_703030516,7.703030516,Depreciation Expense Of Vehicles,accID_7_7030305,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_799,7.799,Other Production Cost,accID_7_7,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_79901,7.79901,Other Production Cost,accID_7_799,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_7_79902,7.79902,Sub Contract Expense,accID_7_799,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8,8.8,Operational Cost,accID_PL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801,8.801,General And Administrative Expense,accID_8_8,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80101,8.80101,Labour Expense – Staff,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010101,8.8010101,Wages Expense – Staff,accID_8_80101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010101,8.801010101,Wages Expense – Staff,accID_8_8010101,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010102,8.801010102,THR Expense – Staff,accID_8_8010101,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010103,8.801010103,Bonus Expense – Staff,accID_8_8010101,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010104,8.801010104,Leave Expense – Staff,accID_8_8010101,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010105,8.801010105,Severance Expense – Staff,accID_8_8010101,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010102,8.8010102,Meal Allowance – Staff,accID_8_80101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010201,8.801010201,Meal Allowance – Staff,accID_8_8010102,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010103,8.8010103,Medical Allowance – Staff,accID_8_80101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010301,8.801010301,Medical Allowance – Staff,accID_8_8010103,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010104,8.8010104,Insurance Expense – Staff,accID_8_80101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010401,8.801010401,Insurance Expense – Staff,accID_8_8010104,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010105,8.8010105,Transportation Expense – Staff,accID_8_80101,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801010501,8.801010501,Transportation Expense – Staff,accID_8_8010105,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80102,8.80102,Office Electricity,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010201,8.8010201,Office Electricity,accID_8_80102,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80103,8.80103,Office Water Expense,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010301,8.8010301,Office Water Expense,accID_8_80103,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80104,8.80104,Communication Expense – Telephone,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010401,8.8010401,Office Communication Expense – Telephone,accID_8_80104,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010402,8.8010402,Factory Communication Expense – Telephone,accID_8_80104,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80105,8.80105,Utilities Expense – Stationary,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010501,8.8010501,Office Utilities Expense – Stationary,accID_8_80105,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010502,8.8010502,Factory Utilities Expense – Stationary,accID_8_80105,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80106,8.80106,Vehicle Expense,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010601,8.8010601,Operation Vehicle Expense,accID_8_80106,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801060101,8.801060101,Office Operation Vehicle Expense,accID_8_8010601,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801060102,8.801060102,Factory Operation Vehicle Expense,accID_8_8010601,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010602,8.8010602,Vehicle Maintenance Expense,accID_8_80106,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801060201,8.801060201,Office Vehicle Maintenance Expense,accID_8_8010602,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_801060202,8.801060202,Factory Vehicle Maintenance Expense,accID_8_8010602,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80107,8.80107,Entertainment Expense,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010701,8.8010701,Guest And Entertainment Expense,accID_8_80107,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80108,8.80108,Transportation Expense,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8010801,8.8010801,Transportation Expense,accID_8_80108,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80199,8.80199,Other General And Administrative Expense,accID_8_801,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8019901,8.8019901,Other General And Administrative Expense,accID_8_80199,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8019902,8.8019902,Rent Expense,accID_8_80199,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8019903,8.8019903,Charitable Donations Expense,accID_8_80199,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_802,8.802,Sales Expense,accID_8_8,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80201,8.80201,Freight Expense – Sales,accID_8_802,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8020101,8.8020101,Freight Expense – Sales,accID_8_80201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80202,8.80202,Sales Commision,accID_8_802,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8020201,8.8020201,Sales Commision,accID_8_80202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80203,8.80203,Promotion And Advertising,accID_8_802,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8020301,8.8020301,Promotion And Advertising,accID_8_80203,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80204,8.80204,Sales Transportation Expense,accID_8_802,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8020401,8.8020401,Sales Transportation Expense,accID_8_80204,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80205,8.80205,Sales Entertainment Expense,accID_8_802,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8020501,8.8020501,Sales Entertainment Expense,accID_8_80205,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80206,8.80206,Bad Debt Expense,accID_8_802,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8020601,8.8020601,Bad Debt Expense,accID_8_80206,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80299,8.80299,Other Sales Expense,accID_8_802,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8029901,8.8029901,Other Sales Expense,accID_8_80299,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_803,8.803,Export Import Expense,accID_8_8,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80301,8.80301,Export Expense,accID_8_803,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80302,8.80302,Bea Masuk,accID_8_803,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80303,8.80303,Provision Of Open L/C,accID_8_803,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80304,8.80304,Telex And Amandement L/C Expense,accID_8_803,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80305,8.80305,L/C Insurance Expense,accID_8_803,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80306,8.80306,PIUD/PB Issued Expense,accID_8_803,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80307,8.80307,PNBP/Jasa Pengerjaan PIB,accID_8_803,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_804,8.804,Oparation Asset Expense,accID_8_8,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80401,8.80401,Maintenance Expense – Operation Asset,accID_8_804,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80402,8.80402,Insurance Expense,accID_8_804,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8040201,8.8040201,Insurance Expense – Building,accID_8_80402,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_804020101,8.804020101,Insurance Expense – Office Building,accID_8_8040201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8040202,8.8040202,Insurance Expense – Vehicle,accID_8_80402,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_804020201,8.804020201,Insurance Expense – Office Vehicle,accID_8_8040202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_804020202,8.804020202,Insurance Expense – Factory Vehicle,accID_8_8040202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_8040203,8.8040203,Depreciation Expense For Operational Asset,accID_8_80402,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_805,8.805,Tax Expense,accID_8_8,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80501,8.80501,PBB,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80502,8.80502,PPH 21 Office And Factory,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80503,8.80503,PPH 21 Factory,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80504,8.80504,PPH 23/26,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80505,8.80505,PPH 25,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80506,8.80506,PPH 29/SPT,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80507,8.80507,PPH 22 Import,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80508,8.80508,PPH 22 DN,accID_8_805,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_806,8.806,"Biaya Materai, Iuran, Perizinan, Surat-surat",accID_8_8,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80601,8.80601,Iuran/Sumbangan,accID_8_806,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80602,8.80602,Materai,accID_8_806,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80603,8.80603,Perizinan Dan Surat-surat,accID_8_806,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_80604,8.80604,Mail Expense,accID_8_806,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_899,8.899,Other Operational Expense,accID_8_8,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_89901,8.89901,Other Operational Expense,accID_8_899,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_8_89902,8.89902,Freight Expense – Purchase,accID_8_899,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9,9.9,Miscellaneous Revenue And Cost,accID_PL,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_901,9.901,Other Income,accID_9_9,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90101,9.90101,Interest Income,accID_9_901,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9010101,9.9010101,Interest Income,accID_9_90101,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90102,9.90102,Giro Service Income,accID_9_901,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9010201,9.9010201,Giro Service Income,accID_9_90102,other,account_type_income,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_902,9.902,Other Expenses,accID_9_9,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90201,9.90201,Interest Expense,accID_9_902,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9020101,9.9020101,Interest Expense,accID_9_90201,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90202,9.90202,Gain/Loss Foreign Exchange,accID_9_902,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9020201,9.9020201,Gain/Loss Foreign Exchange,accID_9_90202,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90203,9.90203,Other Income And Expense,accID_9_902,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9020301,9.9020301,Other Income And Expense,accID_9_90203,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90204,9.90204,Lost Write-Off,accID_9_902,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9020401,9.9020401,Lost Write-Off,accID_9_90204,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_903,9.903,Bank Administrative Expense,accID_9_9,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90301,9.90301,Giro Service Tax,accID_9_903,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9030101,9.9030101,Giro Service Tax,accID_9_90301,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90302,9.90302,Bank Statement Printing Expense,accID_9_903,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9030201,9.9030201,Bank Statement Printing Expense,accID_9_90302,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_90303,9.90303,Bank Administration Expense,accID_9_903,view,account_type_view,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount
+accID_9_9030301,9.9030301,Bank Administration Expense,accID_9_90303,other,account_type_expense,False,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount

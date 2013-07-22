@@ -32,11 +32,15 @@
     3. Bank
     
     """,
-    'depends': ['base', 'account_chart'],
+    'depends': ['account_chart'],
     'demo': [],
-    'data': [   'data/account.account.type.csv',
-                        'data/account.account.template.csv'
-                        'data/res.bank.csv',],
+    'data': [   
+                        'account_chart_template.xml',
+                        'data/account.account.type.csv',
+                        'data/account.account.template.csv',
+                        'data/res.bank.csv',
+                        'account_chart_template_after.xml',
+                        'l10n_id_ar_wizard.xml',],
     'installable': True,
     'images': [],
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+
+        <record id="accountChartTemplate_basicIndonesiaAccount" model="account.chart.template">
+            <field name="name">Basic Indonesian Chart of Account</field>
+            <field name="visible" eval="False" />
+            <field name="complete_tax_set" eval="False" />
+        </record>
+
+    </data>
+</openerp>
