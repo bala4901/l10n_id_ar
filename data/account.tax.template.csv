@@ -1,0 +1,3 @@
+id,description,chart_template_id:id,type_tax_use,name,type,amount,account_collected_id:id,account_paid_id:id
+TaxTempID_001,PPN-OUT,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount,sale,PPN Out,percent,0.1,accID_2_2020204,accID_2_2020204
+TaxTempID_002,PPN-IN,l10n_id_ar.accountChartTemplate_basicIndonesiaAccount,purchase,PPN In,percent,0.1,accID_1_11050207,accID_1_11050207
