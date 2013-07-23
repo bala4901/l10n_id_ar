@@ -4,7 +4,7 @@
 
         <record id="accountChartTemplate_basicIndonesiaAccount" model="account.chart.template">
             <field name="name">Basic Indonesian Chart of Account</field>
-            <field name="visible" eval="False" />
+            <field name="visible" eval="True" />
             <field name="complete_tax_set" eval="False" />
         </record>
 
