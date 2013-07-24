@@ -38,6 +38,7 @@
                         'account_chart_template.xml',
                         'data/account.account.type.csv',
                         'data/account.account.template.csv',
+                        'data/account.tax.template.csv',
                         'data/res.bank.csv',
                         #'data/account.chart.template.csv',
                         'data/account.tax.code.template.csv',
