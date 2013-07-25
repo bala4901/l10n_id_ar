@@ -29,6 +29,69 @@ class wizard_multi_charts_accounts(osv.osv_memory):
     _name='wizard.multi.charts.accounts'
     _inherit = 'wizard.multi.charts.accounts'
 
+    def _load_template(self, cr, uid, template_id, company_id, code_digits=None, obj_wizard=None, account_ref=None, taxes_ref=None, tax_code_ref=None, context=None):
+        '''
+        This function generates all the objects from the templates
+
+        :param template_id: id of the chart template to load
+        :param company_id: id of the company the wizard is running for
+        :param code_digits: integer that depicts the number of digits the accounts code should have in the COA
+        :param obj_wizard: the current wizard for generating the COA from the templates
+        :param acc_ref: Mapping between ids of account templates and real accounts created from them
+        :param taxes_ref: Mapping between ids of tax templates and real taxes created from them
+        :param tax_code_ref: Mapping between ids of tax code templates and real tax codes created from them
+        :returns: return a tuple with a dictionary containing
+            * the mapping between the account template ids and the ids of the real accounts that have been generated
+              from them, as first item,
+            * a similar dictionary for mapping the tax templates and taxes, as second item,
+            * a last identical containing the mapping of tax code templates and tax codes
+        :rtype: tuple(dict, dict, dict)
+        '''
+        if account_ref is None:
+            account_ref = {}
+        if taxes_ref is None:
+            taxes_ref = {}
+        if tax_code_ref is None:
+            tax_code_ref = {}
+        template = self.pool.get('account.chart.template').browse(cr, uid, template_id, context=context)
+        obj_tax_code_template = self.pool.get('account.tax.code.template')
+        obj_acc_tax = self.pool.get('account.tax')
+        obj_tax_temp = self.pool.get('account.tax.template')
+        obj_acc_template = self.pool.get('account.account.template')
+        obj_fiscal_position_template = self.pool.get('account.fiscal.position.template')
+
+        # create all the tax code.
+        tax_code_ref.update(obj_tax_code_template.generate_tax_code(cr, uid, template.tax_code_root_id.id, company_id, context=context))
+
+        # Generate taxes from templates.
+        tax_templates = [x for x in template.tax_template_ids]
+        generated_tax_res = obj_tax_temp._generate_tax(cr, uid, tax_templates, tax_code_ref, company_id, context=context)
+        taxes_ref.update(generated_tax_res['tax_template_to_tax'])
+
+        # Generating Accounts from templates.
+        account_template_ref = obj_acc_template.generate_account(cr, uid, template_id, taxes_ref, account_ref, code_digits, company_id, context=context)
+        account_ref.update(account_template_ref)
+
+        # writing account values on tax after creation of accounts
+        for key,value in generated_tax_res['account_dict'].items():
+            if value['account_collected_id'] or value['account_paid_id']:
+                obj_acc_tax.write(cr, uid, [key], {
+                    'account_collected_id': account_ref.get(value['account_collected_id'], False),
+                    'account_paid_id': account_ref.get(value['account_paid_id'], False),
+                })
+
+        if template.name <> 'Basic Indonesian Chart of Account':
+            # Create Journals
+            self.generate_journals(cr, uid, template_id, account_ref, company_id, context=context)
+
+        # generate properties function
+        self.generate_properties(cr, uid, template_id, account_ref, company_id, context=context)
+
+        # Generate Fiscal Position , Fiscal Position Accounts and Fiscal Position Taxes from templates
+        obj_fiscal_position_template.generate_fiscal_position(cr, uid, template_id, taxes_ref, account_ref, company_id, context=context)
+
+        return account_ref, taxes_ref, tax_code_ref
+
     def execute(self, cr, uid, ids, context=None):
         '''
         This function is called at the confirmation of the wizard to generate the COA from the templates. It will read
