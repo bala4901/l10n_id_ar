@@ -9,23 +9,23 @@
             <field name="arch" type="xml">
                 <field name="code_digits" position='after'>
                     <notebook colspan="4">
-                        <page string="Set Currency">
+                        <page string="Used Currency">
 							<field name="currency_use_ids"/>
                         </page>
                         <page string="Set Cash Account">
-                            <field name="cash_account_ids">
-		                        <form string="Set Cash Account" version="7.0">
+                            <field name="cash_account_ids" mode="tree">
+		                        <tree string="Set Cash Account" editable="bottom">
                                     <field name="name"/>
                                     <field name="currency_id"/>
-		                        </form>
+		                        </tree>
 							</field>
                         </page>
                         <page string="Set Bank Account">
-                            <field name="bank_account_ids">
-		                        <form string="Set Bank Account" version="7.0">
+                            <field name="bank_account_ids" mode="tree">
+		                        <tree string="Set Bank Account" editable="bottom">
                                     <field name="name"/>
                                     <field name="currency_id"/>
-		                        </form>
+		                        </tree>
 							</field>
                         </page>
                     </notebook>

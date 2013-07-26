@@ -200,39 +200,38 @@ class wizard_multi_charts_accounts(osv.osv_memory):
                             ]
 
         if obj_wizard.currency_use_ids:
-            
-            kriteria = [('name', 'in', kriteria_account)]
-            account_template_ids = obj_account_template.search(cr, uid, kriteria)
-            
-            for account_template in obj_account_template.browse(cr, uid, account_template_ids):
-                current_num = 1			
-                for currency in obj_wizard.currency_use_ids:
-                    check = 0
+	        kriteria = [('name', 'in', kriteria_account)]
+	        account_template_ids = obj_account_template.search(cr, uid, kriteria)
+	        
+	        for account_template in obj_account_template.browse(cr, uid, account_template_ids):
+	            current_num = 1			
+	            for currency in obj_wizard.currency_use_ids:
+	                check = 0
 
-                    while check == 0:
-                        new_code = str(account_template.code.ljust(code_digits-len(str(current_num)), '0')) + '0' + str(current_num)
-                        kriteria_check_new_code = [('code', '=', new_code)]
-                        check_new_code_ids = obj_account_template.search(cr, uid, kriteria_check_new_code)
-                        if not check_new_code_ids:
-                            check += 1
-                        else:
-                            current_num += 1
-                    kriteria_type = [('parent_id', '=', account_template.id)]
-                    account_idr_ids = obj_account_template.search(cr, uid, kriteria_type)
-                    account_idr = obj_account_template.browse(cr, uid, account_idr_ids)[0]
-                    
+	                while check == 0:
+	                    new_code = str(account_template.code.ljust(code_digits-len(str(current_num)), '0')) + '0' + str(current_num)
+	                    kriteria_check_new_code = [('code', '=', new_code)]
+	                    check_new_code_ids = obj_account_template.search(cr, uid, kriteria_check_new_code)
+	                    if not check_new_code_ids:
+	                        check += 1
+	                    else:
+	                        current_num += 1
+	                kriteria_type = [('parent_id', '=', account_template.id)]
+	                account_idr_ids = obj_account_template.search(cr, uid, kriteria_type)
+	                account_idr = obj_account_template.browse(cr, uid, account_idr_ids)[0]
+	                
 
-                    vals = {
-                            'code' : new_code,
-                            'name': account_template.name + ' ' + currency.name,
-                            'user_type': account_idr.user_type.id,
-                            'type': account_idr.type,
-                            'currency_id': currency.id,
-                            'parent_id' : acc_template_ref[account_template.id],
-                                }
-                    
-                    obj_account.create(cr, uid, vals, context=context)
-                    current_num += 1
+	                vals = {
+	                        'code' : new_code,
+	                        'name': account_template.name + ' ' + currency.name,
+	                        'user_type': account_idr.user_type.id,
+	                        'type': account_idr.type,
+	                        'currency_id': currency.id,
+	                        'parent_id' : acc_template_ref[account_template.id],
+	                            }
+	                
+	                obj_account.create(cr, uid, vals, context=context)
+	                current_num += 1
         return True
 
     def create_cash_account(self, cr, uid, obj_wizard, company_id, acc_template_ref, context=None):
@@ -270,7 +269,7 @@ class wizard_multi_charts_accounts(osv.osv_memory):
                             'name': cash_account.name,
                             'user_type': cash_type,
                             'type': 'liquidity',
-                            'currency_id': cash_account.currency_id.id,
+                            'currency_id': cash_account.currency_id and cash_account.currency_id.id or False,
                             'parent_id' : acc_template_ref[account_template.id],
                                 }
                     #raise osv.except_osv(_('Error !'), _('%s')%vals)
@@ -313,7 +312,7 @@ class wizard_multi_charts_accounts(osv.osv_memory):
                             'name': bank_account.name,
                             'user_type': bank_type,
                             'type': 'liquidity',
-                            'currency_id': bank_account.currency_id.id,
+                            'currency_id': bank_account.currency_id and bank_account.currency_id.id or False,
                             'parent_id' : acc_template_ref[account_template.id],
                                 }
                     #raise osv.except_osv(_('Error !'), _('%s')%vals)

@@ -30,7 +30,7 @@ class set_cash_account(osv.osv_memory):
     _description = 'Set Cash Account'
 
     _columns = {
-        'name': fields.char(string='Account Cash Name', size=64, required=False),
+        'name': fields.char(string='Cash Account Name', size=64, required=True),
 		'currency_id' : fields.many2one(obj='res.currency', string='Currency'),
         'wizard_id': fields.many2one(obj='wizard.multi.charts.accounts', string='Wizard Multi Chart Accounts', required=False),
     }
