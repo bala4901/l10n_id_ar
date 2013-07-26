@@ -29,6 +29,46 @@ class wizard_multi_charts_accounts(osv.osv_memory):
     _name='wizard.multi.charts.accounts'
     _inherit = 'wizard.multi.charts.accounts'
 
+    _columns = {
+        'currency_use_ids': fields.many2many(string='Currency', obj='res.currency', rel='l10n_curency_wizard_rel', id1='wizard_id', id2='currency_id', required=True),
+        'bank_account_ids': fields.one2many(obj='account.set_bank_account', fields_id='wizard_id', string='Set Bank Account'),
+        'cash_account_ids': fields.one2many(obj='account.set_cash_account', fields_id='wizard_id', string='Set Cash Account'),
+    }
+
+    def default_get(self, cr, uid, fields, context=None):
+        res = super(wizard_multi_charts_accounts, self).default_get(cr, uid, fields, context=context)
+        tax_templ_obj = self.pool.get('account.tax.template')
+
+        if 'bank_accounts_id' in fields:
+            res.update({'bank_accounts_id': [{'acc_name': _('Cash'), 'account_type': 'cash'},{'acc_name': _('Bank'), 'account_type': 'bank'}]})
+        if 'company_id' in fields:
+            res.update({'company_id': self.pool.get('res.users').browse(cr, uid, [uid], context=context)[0].company_id.id})
+        if 'currency_id' in fields:
+            company_id = res.get('company_id') or False
+            if company_id:
+                company_obj = self.pool.get('res.company')
+                country_id = company_obj.browse(cr, uid, company_id, context=context).country_id.id
+                currency_id = company_obj.on_change_country(cr, uid, company_id, country_id, context=context)['value']['currency_id']
+                res.update({'currency_id': currency_id})
+
+        ids = self.pool.get('account.chart.template').search(cr, uid, [('visible', '=', True),('name', '=', 'Basic Indonesian Chart of Account')], context=context)
+        if ids:
+            if 'chart_template_id' in fields:
+                res.update({'only_one_chart_template': len(ids) == 1, 'chart_template_id': ids[0]})
+            if 'sale_tax' in fields:
+                sale_tax_ids = tax_templ_obj.search(cr, uid, [("chart_template_id"
+                                              , "=", ids[0]), ('type_tax_use', 'in', ('sale','all'))], order="sequence")
+                res.update({'sale_tax': sale_tax_ids and sale_tax_ids[0] or False})
+            if 'purchase_tax' in fields:
+                purchase_tax_ids = tax_templ_obj.search(cr, uid, [("chart_template_id"
+                                          , "=", ids[0]), ('type_tax_use', 'in', ('purchase','all'))], order="sequence")
+                res.update({'purchase_tax': purchase_tax_ids and purchase_tax_ids[0] or False})
+        res.update({
+            'purchase_tax_rate': 10.0,
+            'sale_tax_rate': 10.0,
+        })
+        return res
+
     def _load_template(self, cr, uid, template_id, company_id, code_digits=None, obj_wizard=None, account_ref=None, taxes_ref=None, tax_code_ref=None, context=None):
         '''
         This function generates all the objects from the templates
@@ -132,6 +172,153 @@ class wizard_multi_charts_accounts(osv.osv_memory):
         if obj_wizard.chart_template_id.name <> 'Basic Indonesian Chart of Account':
             # Create Bank journals
             self._create_bank_journals_from_o2m(cr, uid, obj_wizard, company_id, acc_template_ref, context=context)
+        else:
+            self.create_currency_account(cr, uid, obj_wizard, company_id, acc_template_ref, context=context)
+            self.create_cash_account(cr, uid, obj_wizard, company_id, acc_template_ref, context=context)
+            self.create_bank_account(cr, uid, obj_wizard, company_id, acc_template_ref, context=context)
         return {}
+
+    def create_currency_account(self, cr, uid, obj_wizard, company_id, acc_template_ref, context=None):
+
+        obj_account = self.pool.get('account.account')
+        obj_account_template = self.pool.get('account.account.template')
+        code_digits = obj_wizard.code_digits
+
+        kriteria_account = ['Account Receivable',
+                            'Advance Payment For Purchase',
+                            'Deposit For Purchase',
+                            'Trade Payable',
+                            'Trade Payable Import',
+                            'Purchase Discont',
+                            'Purchase Return',
+                            'Advance Payment For Sales',
+                            'Deposit For Sales',
+                            'Sales Revenue',
+                            'Sales Return',
+                            'Sales Price Different',
+                            'Sales Discount'
+                            ]
+
+        if obj_wizard.currency_use_ids:
+            
+            kriteria = [('name', 'in', kriteria_account)]
+            account_template_ids = obj_account_template.search(cr, uid, kriteria)
+            
+            for account_template in obj_account_template.browse(cr, uid, account_template_ids):
+                current_num = 1			
+                for currency in obj_wizard.currency_use_ids:
+                    check = 0
+
+                    while check == 0:
+                        new_code = str(account_template.code.ljust(code_digits-len(str(current_num)), '0')) + '0' + str(current_num)
+                        kriteria_check_new_code = [('code', '=', new_code)]
+                        check_new_code_ids = obj_account_template.search(cr, uid, kriteria_check_new_code)
+                        if not check_new_code_ids:
+                            check += 1
+                        else:
+                            current_num += 1
+                    kriteria_type = [('parent_id', '=', account_template.id)]
+                    account_idr_ids = obj_account_template.search(cr, uid, kriteria_type)
+                    account_idr = obj_account_template.browse(cr, uid, account_idr_ids)[0]
+                    
+
+                    vals = {
+                            'code' : new_code,
+                            'name': account_template.name + ' ' + currency.name,
+                            'user_type': account_idr.user_type.id,
+                            'type': account_idr.type,
+                            'currency_id': currency.id,
+                            'parent_id' : acc_template_ref[account_template.id],
+                                }
+                    
+                    obj_account.create(cr, uid, vals, context=context)
+                    current_num += 1
+        return True
+
+    def create_cash_account(self, cr, uid, obj_wizard, company_id, acc_template_ref, context=None):
+
+        obj_account = self.pool.get('account.account')
+        obj_account_template = self.pool.get('account.account.template')
+        code_digits = obj_wizard.code_digits
+        obj_data = self.pool.get('ir.model.data')
+        
+        kriteria_account = ['Cash']
+
+        if obj_wizard.currency_use_ids:
+            
+            kriteria = [('name', 'in', kriteria_account)]
+            account_template_ids = obj_account_template.search(cr, uid, kriteria)
+            
+            for account_template in obj_account_template.browse(cr, uid, account_template_ids):
+                current_num = 1			
+                for cash_account in obj_wizard.cash_account_ids:
+                    check = 0
+
+                    while check == 0:
+                        new_code = str(account_template.code.ljust(code_digits-len(str(current_num)), '0')) + '0' + str(current_num)
+                        kriteria_check_new_code = [('code', '=', new_code)]
+                        check_new_code_ids = obj_account_template.search(cr, uid, kriteria_check_new_code)
+                        if not check_new_code_ids:
+                            check += 1
+                        else:
+                            current_num += 1
+                    tmp = obj_data.get_object_reference(cr, uid, 'account', 'data_account_type_cash')
+                    cash_type = tmp and tmp[1] or False
+                    
+                    vals = {
+                            'code' : new_code,
+                            'name': cash_account.name,
+                            'user_type': cash_type,
+                            'type': 'liquidity',
+                            'currency_id': cash_account.currency_id.id,
+                            'parent_id' : acc_template_ref[account_template.id],
+                                }
+                    #raise osv.except_osv(_('Error !'), _('%s')%vals)
+                    obj_account.create(cr, uid, vals, context=context)
+                    current_num += 1
+        return True
+
+    def create_bank_account(self, cr, uid, obj_wizard, company_id, acc_template_ref, context=None):
+
+        obj_account = self.pool.get('account.account')
+        obj_account_template = self.pool.get('account.account.template')
+        code_digits = obj_wizard.code_digits
+        obj_data = self.pool.get('ir.model.data')
+        
+        kriteria_account = ['Bank']
+
+        if obj_wizard.currency_use_ids:
+            
+            kriteria = [('name', 'in', kriteria_account)]
+            account_template_ids = obj_account_template.search(cr, uid, kriteria)
+            
+            for account_template in obj_account_template.browse(cr, uid, account_template_ids):
+                current_num = 1			
+                for bank_account in obj_wizard.bank_account_ids:
+                    check = 0
+
+                    while check == 0:
+                        new_code = str(account_template.code.ljust(code_digits-len(str(current_num)), '0')) + '0' + str(current_num)
+                        kriteria_check_new_code = [('code', '=', new_code)]
+                        check_new_code_ids = obj_account_template.search(cr, uid, kriteria_check_new_code)
+                        if not check_new_code_ids:
+                            check += 1
+                        else:
+                            current_num += 1
+                    tmp = obj_data.get_object_reference(cr, uid, 'account', 'data_account_type_bank')
+                    bank_type = tmp and tmp[1] or False
+                    
+                    vals = {
+                            'code' : new_code,
+                            'name': bank_account.name,
+                            'user_type': bank_type,
+                            'type': 'liquidity',
+                            'currency_id': bank_account.currency_id.id,
+                            'parent_id' : acc_template_ref[account_template.id],
+                                }
+                    #raise osv.except_osv(_('Error !'), _('%s')%vals)
+                    obj_account.create(cr, uid, vals, context=context)
+                    current_num += 1
+        return True
 
 wizard_multi_charts_accounts()

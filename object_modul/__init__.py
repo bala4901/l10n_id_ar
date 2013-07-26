@@ -20,7 +20,7 @@
 #
 ##############################################################################
 
-import object_modul
-import object_other
+import set_cash_account
+import set_bank_account
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
