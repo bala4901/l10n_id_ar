@@ -42,6 +42,7 @@
                         'data/account.tax.template.csv',
                         'data/res.bank.csv',
                         'data/account.tax.code.template.csv',
+                        'data/res.country.state.csv',
                         'account_chart_template_after.xml',
                         'l10n_id_ar_wizard.xml',],
     'installable': True,
